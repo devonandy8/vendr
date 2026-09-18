@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Support — Vendr</title>
+    <meta name="description" content="Contact Vendr support for help with the campus marketplace app." />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Figtree:wght@400;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap nav">
+        <a class="brand" href="index.html"><img src="assets/logo.svg" alt="" />Vendr</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Open menu">☰</button>
+        <nav class="nav-links">
+          <a href="index.html#product">Product</a>
+          <a href="index.html#market">Live demo</a>
+          <a class="active" href="support.html">Support</a>
+        </nav>
+        <a class="nav-cta" href="index.html#waitlist">Get Vendr</a>
+      </div>
+    </header>
+    <main class="wrap support-page">
+      <p class="eyebrow">Help</p>
+      <h1>Support</h1>
+      <p class="lede">Tell us what broke, what you need, or what your campus is missing. We’ll get back as fast as we can.</p>
+      <div class="form-card card">
+        <p>Email us directly at <a href="mailto:support@campusmarket.app"><strong>support@campusmarket.app</strong></a> or send a ticket below. Submitting opens your mail app with the message filled in.</p>
+        <form id="support-form">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" autocomplete="name" required />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+          </div>
+          <div class="form-row">
+            <label for="topic">Topic</label>
+            <select id="topic" name="topic">
+              <option>Orders & payments</option>
+              <option>Listings</option>
+              <option>Delivery</option>
+              <option>Account</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required placeholder="What happened?"></textarea>
+          </div>
+          <button class="btn" type="submit">Send message</button>
+          <p class="form-status" id="support-status"></p>
+        </form>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-grid">
+        <a class="brand" href="index.html"><img src="assets/logo.svg" alt="" />Vendr</a>
+        <div>
+          <a href="privacy.html">Privacy</a> ·
+          <a href="terms.html">Terms</a> ·
+          <a href="support.html">Support</a>
+          <p>© <span data-year></span> Vendr</p>
+        </div>
+      </div>
+    </footer>
+    <div class="toast" id="toast" role="status"></div>
+    <script src="js/app.js"></script>
+  </body>
+</html>
