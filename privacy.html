@@ -5,60 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Privacy policy — Vendr</title>
     <meta name="description" content="Privacy policy for the Vendr campus marketplace app." />
+    <link rel="icon" href="assets/favicon.ico" sizes="any" />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Figtree:wght@400;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="wrap nav">
-        <a class="brand" href="index.html"><img src="assets/logo.svg" alt="" />Vendr</a>
+        <a class="brand" href="index.html">
+          <img src="assets/logo.svg" alt="" width="28" height="28" />
+          <span class="brand-mark">Vendr</span>
+        </a>
         <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Open menu">☰</button>
-        <nav class="nav-links">
-          <a href="index.html#product">Product</a>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="index.html#features">Features</a>
           <a href="support.html">Support</a>
           <a class="active" href="privacy.html">Privacy</a>
         </nav>
-        <a class="nav-cta" href="index.html#waitlist">Get Vendr</a>
+        <a class="nav-cta" href="index.html#waitlist">Get early access</a>
       </div>
     </header>
-    <main class="wrap legal-page">
-      <p class="eyebrow">Legal</p>
-      <h1>Privacy policy</h1>
-      <p class="lede">Last updated 18 September 2026. This policy describes how Vendr handles information in the campus marketplace app and on this website.</p>
+
+    <main class="wrap page-content">
+      <div class="page-hero">
+        <p class="eyebrow">Legal</p>
+        <h1>Privacy policy</h1>
+        <p class="lede">Last updated 18 September 2026. This policy describes how Vendr handles information in the campus marketplace app and on this website.</p>
+      </div>
       <article class="card">
         <h3>Who we are</h3>
-        <p>Vendr is a campus marketplace for university students. You can reach us at support@campusmarket.app.</p>
+        <p>Vendr is a campus marketplace for university students. Contact us at support@campusmarket.app.</p>
         <h3>Information we collect</h3>
         <p>Depending on how you use Vendr, we may collect account details (name, email, campus), listings you post, messages, order and payout records, delivery locations you choose, and device information needed to run the app.</p>
         <h3>How we use it</h3>
-        <p>We use this information to operate the marketplace, process payments with our provider Paystack, show relevant campus listings, provide support, and keep the community safe.</p>
+        <p>We use this information to operate the marketplace, process payments with Paystack, show relevant campus listings, provide support, and keep the community safe.</p>
         <h3>Sharing</h3>
         <p>We share data with infrastructure and payment processors that help us run Vendr. We do not sell personal information. Other students may see the profile and listing details you choose to publish.</p>
         <h3>This website</h3>
         <p>The public website stores waitlist emails, demo carts, and support drafts in your browser only (local storage). Those demo records are not sent to our servers unless you email support.</p>
         <h3>Your choices</h3>
-        <p>You can request access, correction, or deletion of your account data by emailing support@campusmarket.app. You can also clear this website’s local demo data from your browser settings.</p>
+        <p>You can request access, correction, or deletion of your account data by emailing support@campusmarket.app. You can also clear this website's local demo data from your browser settings.</p>
         <h3>Contact</h3>
         <p>Questions about privacy: support@campusmarket.app.</p>
       </article>
     </main>
+
     <footer class="site-footer">
       <div class="wrap footer-grid">
-        <a class="brand" href="index.html"><img src="assets/logo.svg" alt="" />Vendr</a>
-        <div>
-          <a href="privacy.html">Privacy</a> ·
-          <a href="terms.html">Terms</a> ·
-          <a href="support.html">Support</a>
-          <p>© <span data-year></span> Vendr</p>
+        <div class="footer-brand">
+          <a class="brand" href="index.html">
+            <img src="assets/logo.svg" alt="" width="28" height="28" />
+            <span class="brand-mark">Vendr</span>
+          </a>
+          <p>Campus marketplace for university students.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <nav class="footer-links">
+            <a href="privacy.html">Privacy policy</a>
+            <a href="terms.html">Terms of use</a>
+            <a href="support.html">Support</a>
+          </nav>
         </div>
       </div>
+      <div class="wrap footer-bottom">
+        <span>© <span data-year></span> Vendr. All rights reserved.</span>
+      </div>
     </footer>
+
     <script src="js/app.js"></script>
   </body>
 </html>

@@ -18,6 +18,10 @@ const CATEGORIES = [
   { id: "stay", label: "Stay" },
 ];
 
+const CATEGORY_LABELS = Object.fromEntries(
+  CATEGORIES.filter((c) => c.id !== "all").map((c) => [c.id, c.label]),
+);
+
 const STORAGE_KEYS = {
   cart: "vendr-cart",
   waitlist: "vendr-waitlist",
@@ -87,7 +91,7 @@ function renderListings() {
   if (!root) return;
   const items = LISTINGS.filter(listingMatches);
   if (!items.length) {
-    root.innerHTML = `<p class="empty">Nothing matches that search. Try another campus find.</p>`;
+    root.innerHTML = `<p class="empty">No listings match your search. Try a different keyword or category.</p>`;
     return;
   }
   root.innerHTML = items
@@ -96,7 +100,7 @@ function renderListings() {
       <article class="listing">
         <div class="listing-media" style="background:${item.color}"></div>
         <div class="listing-body">
-          <p class="kicker">${item.category}</p>
+          <p class="kicker">${CATEGORY_LABELS[item.category] ?? item.category}</p>
           <h3>${item.title}</h3>
           <p>${item.blurb}</p>
           <p class="price">${formatCedis(item.price)}</p>
@@ -245,7 +249,7 @@ function setupWaitlist() {
     }
     form.reset();
     status.className = "form-status ok";
-    status.textContent = "You’re on the list. We’ll ping you when Vendr opens on your campus.";
+    status.textContent = "You're on the waitlist. We'll email you when Vendr opens on your campus.";
   });
 }
 

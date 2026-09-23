@@ -5,74 +5,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Support — Vendr</title>
     <meta name="description" content="Contact Vendr support for help with the campus marketplace app." />
+    <link rel="icon" href="assets/favicon.ico" sizes="any" />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Figtree:wght@400;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="wrap nav">
-        <a class="brand" href="index.html"><img src="assets/logo.svg" alt="" />Vendr</a>
+        <a class="brand" href="index.html">
+          <img src="assets/logo.svg" alt="" width="28" height="28" />
+          <span class="brand-mark">Vendr</span>
+        </a>
         <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Open menu">☰</button>
-        <nav class="nav-links">
-          <a href="index.html#product">Product</a>
-          <a href="index.html#market">Live demo</a>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="index.html#features">Features</a>
+          <a href="index.html#demo">Demo</a>
           <a class="active" href="support.html">Support</a>
         </nav>
-        <a class="nav-cta" href="index.html#waitlist">Get Vendr</a>
+        <a class="nav-cta" href="index.html#waitlist">Get early access</a>
       </div>
     </header>
-    <main class="wrap support-page">
-      <p class="eyebrow">Help</p>
-      <h1>Support</h1>
-      <p class="lede">Tell us what broke, what you need, or what your campus is missing. We’ll get back as fast as we can.</p>
-      <div class="form-card card">
-        <p>Email us directly at <a href="mailto:support@campusmarket.app"><strong>support@campusmarket.app</strong></a> or send a ticket below. Submitting opens your mail app with the message filled in.</p>
+
+    <main class="wrap page-content">
+      <div class="page-hero">
+        <p class="eyebrow">Support</p>
+        <h1>How can we help?</h1>
+        <p class="lede">
+          Report an issue, ask a question, or tell us what your campus needs. We
+          respond as quickly as we can.
+        </p>
+      </div>
+      <div class="card form-card">
+        <p>
+          Email us at
+          <a href="mailto:support@campusmarket.app"><strong>support@campusmarket.app</strong></a>
+          or submit the form below. Submitting opens your mail client with the message
+          pre-filled.
+        </p>
         <form id="support-form">
           <div class="form-row">
-            <label for="name">Name</label>
+            <label for="name">Full name</label>
             <input id="name" name="name" autocomplete="name" required />
           </div>
           <div class="form-row">
-            <label for="email">Email</label>
+            <label for="email">Email address</label>
             <input id="email" name="email" type="email" autocomplete="email" required />
           </div>
           <div class="form-row">
             <label for="topic">Topic</label>
             <select id="topic" name="topic">
-              <option>Orders & payments</option>
+              <option>Orders &amp; payments</option>
               <option>Listings</option>
               <option>Delivery</option>
               <option>Account</option>
-              <option>Something else</option>
+              <option>Other</option>
             </select>
           </div>
           <div class="form-row">
             <label for="message">Message</label>
-            <textarea id="message" name="message" required placeholder="What happened?"></textarea>
+            <textarea id="message" name="message" required placeholder="Describe your issue or question"></textarea>
           </div>
           <button class="btn" type="submit">Send message</button>
           <p class="form-status" id="support-status"></p>
         </form>
       </div>
     </main>
+
     <footer class="site-footer">
       <div class="wrap footer-grid">
-        <a class="brand" href="index.html"><img src="assets/logo.svg" alt="" />Vendr</a>
-        <div>
-          <a href="privacy.html">Privacy</a> ·
-          <a href="terms.html">Terms</a> ·
-          <a href="support.html">Support</a>
-          <p>© <span data-year></span> Vendr</p>
+        <div class="footer-brand">
+          <a class="brand" href="index.html">
+            <img src="assets/logo.svg" alt="" width="28" height="28" />
+            <span class="brand-mark">Vendr</span>
+          </a>
+          <p>Campus marketplace for university students.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Product</h4>
+          <nav class="footer-links">
+            <a href="index.html#features">Features</a>
+            <a href="index.html#demo">Demo</a>
+          </nav>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <nav class="footer-links">
+            <a href="privacy.html">Privacy policy</a>
+            <a href="terms.html">Terms of use</a>
+            <a href="support.html">Support</a>
+          </nav>
         </div>
       </div>
+      <div class="wrap footer-bottom">
+        <span>© <span data-year></span> Vendr. All rights reserved.</span>
+      </div>
     </footer>
-    <div class="toast" id="toast" role="status"></div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
     <script src="js/app.js"></script>
   </body>
 </html>

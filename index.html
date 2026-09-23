@@ -3,89 +3,113 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Vendr — Campus marketplace</title>
+    <title>Vendr — Campus marketplace for university students</title>
     <meta
       name="description"
-      content="Vendr is the campus app for buying and selling, booking services, ordering food, and finding a place to stay."
+      content="Vendr is the campus marketplace for buying and selling, booking services, ordering food, and finding accommodation — all within your university."
     />
     <meta property="og:title" content="Vendr — Campus marketplace" />
     <meta
       property="og:description"
-      content="One account. One campus. Shop, services, food, and stay."
+      content="One account. One campus. Shop, services, food, and accommodation."
     />
     <meta property="og:type" content="website" />
+    <link rel="icon" href="assets/favicon.ico" sizes="any" />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Figtree:wght@400;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
+
     <header class="site-header">
       <div class="wrap nav">
         <a class="brand" href="index.html">
-          <img src="assets/logo.svg" alt="" />
-          Vendr
+          <img src="assets/logo.svg" alt="" width="28" height="28" />
+          <span class="brand-mark">Vendr</span>
         </a>
         <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Open menu">☰</button>
-        <nav class="nav-links">
-          <a href="#product">Product</a>
-          <a href="#market">Live demo</a>
-          <a href="#how">How it works</a>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="#features">Features</a>
+          <a href="#demo">Demo</a>
+          <a href="#how-it-works">How it works</a>
           <a href="support.html">Support</a>
         </nav>
-        <a class="nav-cta" href="#waitlist">Get Vendr</a>
+        <a class="nav-cta" href="#waitlist">Get early access</a>
       </div>
     </header>
 
     <main id="main">
       <section class="wrap hero">
-        <div>
-          <p class="eyebrow">Campus commerce, rebuilt</p>
-          <h1>Your campus. One market.</h1>
+        <div class="hero-copy">
+          <p class="eyebrow">Campus marketplace</p>
+          <h1>Everything your campus needs, in one app.</h1>
           <p class="lede">
-            Vendr is the student app for buying and selling, booking campus services,
-            ordering food, sending packages, and finding a room — all from one account.
+            Vendr connects university students to buy and sell goods, book campus
+            services, order food, send packages, and find accommodation — scoped to
+            your school.
           </p>
           <div class="hero-actions">
-            <a class="btn" href="#market">Try the market</a>
-            <a class="btn secondary" href="#waitlist">Join the waitlist</a>
+            <a class="btn" href="#demo">Try the demo</a>
+            <a class="btn secondary" href="#waitlist">Join waitlist</a>
           </div>
-          <div class="hero-meta">
-            <div><b>4</b><span>campus experiences</span></div>
-            <div><b>GH₵</b><span>prices in cedis</span></div>
-            <div><b>Paystack</b><span>checkout & payouts</span></div>
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-value">4</span>
+              <span class="stat-label">Marketplace experiences</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">GH₵</span>
+              <span class="stat-label">Local pricing &amp; payouts</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">Paystack</span>
+              <span class="stat-label">Secure checkout</span>
+            </div>
           </div>
         </div>
-        <div class="phone-stage">
-          <div class="blob" aria-hidden="true"></div>
-          <div class="phone">
-            <div class="phone-notch"></div>
+
+        <div class="hero-visual">
+          <div class="phone-frame" aria-hidden="true">
             <div class="phone-screen">
-              <div class="phone-head">
+              <div class="phone-status">
                 <strong>Campus finds</strong>
-                <span>Live</span>
+                <span class="phone-badge">Live</span>
               </div>
               <div class="phone-grid">
                 <article class="mini-card">
-                  <div class="swatch" style="background:#dbe7ff"></div>
-                  <p>MacBook Air<br /><b>GH₵ 4,200</b></p>
+                  <div class="mini-card-thumb" style="background: #eef2ff"></div>
+                  <div class="mini-card-body">
+                    <p class="mini-card-title">MacBook Air M1</p>
+                    <p class="mini-card-price">GH₵ 4,200</p>
+                  </div>
                 </article>
                 <article class="mini-card">
-                  <div class="swatch" style="background:#ffe7c7"></div>
-                  <p>Jollof combo<br /><b>GH₵ 45</b></p>
+                  <div class="mini-card-thumb" style="background: #fff4e6"></div>
+                  <div class="mini-card-body">
+                    <p class="mini-card-title">Jollof combo</p>
+                    <p class="mini-card-price">GH₵ 45</p>
+                  </div>
                 </article>
                 <article class="mini-card">
-                  <div class="swatch" style="background:#ffe8ef"></div>
-                  <p>Knotless braids<br /><b>GH₵ 250</b></p>
+                  <div class="mini-card-thumb" style="background: #fff0ef"></div>
+                  <div class="mini-card-body">
+                    <p class="mini-card-title">Knotless braids</p>
+                    <p class="mini-card-price">GH₵ 250</p>
+                  </div>
                 </article>
                 <article class="mini-card">
-                  <div class="swatch" style="background:#e7f3ff"></div>
-                  <p>East campus room<br /><b>GH₵ 1,800</b></p>
+                  <div class="mini-card-thumb" style="background: #eef6ff"></div>
+                  <div class="mini-card-body">
+                    <p class="mini-card-title">East campus room</p>
+                    <p class="mini-card-price">GH₵ 1,800</p>
+                  </div>
                 </article>
               </div>
             </div>
@@ -93,82 +117,116 @@
         </div>
       </section>
 
-      <div class="marquee" aria-hidden="true">
-        <div class="marquee-track">
-          <span>Phones</span><span>Hostels</span><span>Braids</span><span>Jollof</span>
-          <span>Laptops</span><span>Delivery</span><span>Tutoring</span><span>Rooms</span>
-          <span>Phones</span><span>Hostels</span><span>Braids</span><span>Jollof</span>
-          <span>Laptops</span><span>Delivery</span><span>Tutoring</span><span>Rooms</span>
+      <div class="campus-strip">
+        <div class="wrap campus-strip-inner">
+          <span class="campus-strip-label">Built for Ghana's leading campuses</span>
+          <div class="campus-badges">
+            <span class="campus-badge">UG</span>
+            <span class="campus-badge">KNUST</span>
+            <span class="campus-badge">UCC</span>
+            <span class="campus-badge">Ashesi</span>
+            <span class="campus-badge">UPSA</span>
+            <span class="campus-badge">GCTU</span>
+          </div>
         </div>
       </div>
 
-      <section class="section alt" id="product">
+      <section class="section" id="features">
         <div class="wrap">
-          <div class="section-head">
-            <h2>Four campus lanes. Same account.</h2>
-            <p>Vendr keeps marketplace, services, food, and accommodation independent — without making you juggle four apps.</p>
+          <div class="section-header">
+            <h2>One platform, four campus experiences</h2>
+            <p>
+              Vendr keeps marketplace, services, food, and accommodation in separate,
+              purpose-built flows — without asking you to manage multiple apps.
+            </p>
           </div>
-          <div class="experience-grid">
-            <article class="card feature" style="--card-bg:#fff0ef">
-              <p class="kicker">Shop</p>
+          <div class="feature-grid">
+            <article class="feature-card">
+              <div class="feature-icon" aria-hidden="true">◫</div>
               <div>
-                <h3>Buy and sell around campus.</h3>
-                <p>Post a gadget, textbook, or pair of sneakers in minutes. Chat the seller, pay in-app, and arrange pickup or delivery.</p>
+                <p class="kicker">Marketplace</p>
+                <h3>Buy and sell on campus</h3>
+                <p>
+                  List textbooks, electronics, clothing, and more. Message sellers,
+                  pay in-app, and arrange pickup or delivery.
+                </p>
               </div>
             </article>
-            <div class="stack">
-              <article class="card feature" style="--card-bg:#e8fff3">
+            <article class="feature-card">
+              <div class="feature-icon" aria-hidden="true">◎</div>
+              <div>
                 <p class="kicker">Services</p>
-                <h3>Book campus providers.</h3>
-                <p>Braids, printing, tutoring, repairs — businesses with hours, portfolios, and bookings.</p>
-              </article>
-              <article class="card feature" style="--card-bg:#fff4e0">
-                <p class="kicker">Food & send</p>
-                <h3>Meals and packages on the move.</h3>
-                <p>Order from campus vendors or send a parcel by bike or car, with live quotes.</p>
-              </article>
-            </div>
+                <h3>Book campus providers</h3>
+                <p>
+                  Find braiders, tutors, printers, and repair shops with portfolios,
+                  availability, and in-app booking.
+                </p>
+              </div>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon" aria-hidden="true">▣</div>
+              <div>
+                <p class="kicker">Food &amp; delivery</p>
+                <h3>Meals and packages, delivered</h3>
+                <p>
+                  Order from campus vendors or send a parcel with live quotes and
+                  rider tracking on a unified delivery hub.
+                </p>
+              </div>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon" aria-hidden="true">⌂</div>
+              <div>
+                <p class="kicker">Accommodation</p>
+                <h3>Find a place near campus</h3>
+                <p>
+                  Browse hostels and rooms with semester-friendly pricing, occupancy
+                  details, and campus-specific listings.
+                </p>
+              </div>
+            </article>
           </div>
-          <article class="card feature" style="--card-bg:#e7f3ff;margin-top:16px">
-            <p class="kicker">Stay</p>
-            <h3>Find a room near campus.</h3>
-            <p>Browse hostels and rooms with occupancy, availability, and semester-friendly pricing — built like property, not a product listing.</p>
-          </article>
         </div>
       </section>
 
-      <section class="section" id="market">
+      <section class="section section-alt" id="demo">
         <div class="wrap">
-          <div class="section-head">
-            <h2>A working campus market.</h2>
-            <p>Search real-feeling listings, filter by experience, add to cart, and place a demo order. Nothing is charged.</p>
+          <div class="section-header">
+            <h2>Interactive demo</h2>
+            <p>
+              Browse sample listings, filter by category, and place a demo order. No
+              payment is processed — everything stays in your browser.
+            </p>
           </div>
           <div class="demo-layout">
-            <aside class="filters">
-              <div class="form-row">
-                <label for="market-search">Search</label>
-                <input id="market-search" type="search" placeholder="MacBook, jollof, room…" />
+            <aside>
+              <div class="panel">
+                <h3 class="panel-title">Search &amp; filter</h3>
+                <div class="form-row">
+                  <label for="market-search">Search listings</label>
+                  <input id="market-search" type="search" placeholder="MacBook, jollof, room…" />
+                </div>
+                <div class="form-row">
+                  <label>Category</label>
+                  <div class="chips" id="category-chips"></div>
+                </div>
               </div>
-              <div class="form-row">
-                <label>Category</label>
-                <div class="chips" id="category-chips"></div>
-              </div>
-              <div class="cart-panel" style="padding:0;border:0">
-                <h3>Cart</h3>
+              <div class="panel">
+                <h3 class="panel-title">Cart</h3>
                 <div id="cart-items"></div>
                 <div class="total"><span>Total</span><span id="cart-total">GH₵ 0</span></div>
                 <form id="checkout-form">
                   <div class="form-row">
-                    <label for="name">Name</label>
+                    <label for="name">Full name</label>
                     <input id="name" name="name" autocomplete="name" />
                   </div>
                   <div class="form-row">
                     <label for="hall">Hall / hostel</label>
-                    <input id="hall" name="hall" />
+                    <input id="hall" name="hall" placeholder="e.g. Commonwealth Hall" />
                   </div>
                   <div class="form-row">
-                    <label for="phone">Phone</label>
-                    <input id="phone" name="phone" type="tel" />
+                    <label for="phone">Phone number</label>
+                    <input id="phone" name="phone" type="tel" placeholder="e.g. 024 000 0000" />
                   </div>
                   <button class="btn" type="submit">Place demo order</button>
                   <p class="form-status" id="checkout-status"></p>
@@ -180,71 +238,99 @@
         </div>
       </section>
 
-      <section class="section alt" id="how">
+      <section class="section" id="how-it-works">
         <div class="wrap">
-          <div class="section-head">
+          <div class="section-header section-header-center">
             <h2>How Vendr works</h2>
             <p>One campus profile. Buy, sell, book, eat, and stay without switching identities.</p>
           </div>
           <div class="steps">
             <article class="step">
-              <em>1</em>
-              <h3>Join with your campus.</h3>
-              <p>Sign in, pick your university, and land in the market that actually belongs to your school.</p>
+              <span class="step-num">1</span>
+              <h3>Join your campus</h3>
+              <p>
+                Sign in, select your university, and enter the marketplace scoped to
+                your school.
+              </p>
             </article>
             <article class="step">
-              <em>2</em>
-              <h3>Find it or list it.</h3>
-              <p>Browse products, services, food, and rooms — or post yours in a flow built for that experience.</p>
+              <span class="step-num">2</span>
+              <h3>Browse or list</h3>
+              <p>
+                Discover products, services, food, and rooms — or publish your own
+                listing in a guided flow.
+              </p>
             </article>
             <article class="step">
-              <em>3</em>
-              <h3>Pay, chat, deliver.</h3>
-              <p>Message in context, pay with Paystack, and move things by pickup, rider, or campus drop.</p>
+              <span class="step-num">3</span>
+              <h3>Pay, chat, deliver</h3>
+              <p>
+                Message in context, checkout with Paystack, and coordinate pickup or
+                campus delivery.
+              </p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section" id="faq">
-        <div class="wrap faq">
-          <h2>Questions</h2>
-          <details open>
-            <summary>Is this the official Vendr app website?</summary>
-            <p>Yes. This is the public homepage for Vendr, the campus marketplace app formerly prototyped as Campus Market.</p>
-          </details>
-          <details>
-            <summary>Does the live demo charge money?</summary>
-            <p>No. The market on this page is a local demo. Orders and support tickets stay in your browser so you can try the flow.</p>
-          </details>
-          <details>
-            <summary>Where can I download the app?</summary>
-            <p>Join the waitlist below. When store listings go live, that same email is how we’ll send the iOS and Android links.</p>
-          </details>
-          <details>
-            <summary>How do I reach support?</summary>
-            <p>Use the <a href="support.html">support page</a> or email support@campusmarket.app.</p>
-          </details>
+      <section class="section section-alt" id="faq">
+        <div class="wrap">
+          <div class="section-header">
+            <h2>Frequently asked questions</h2>
+          </div>
+          <div class="faq-list">
+            <details open>
+              <summary>Is this the official Vendr website?</summary>
+              <p>
+                Yes. This is the public site for Vendr, the campus marketplace app
+                for university students in Ghana.
+              </p>
+            </details>
+            <details>
+              <summary>Does the demo charge real money?</summary>
+              <p>
+                No. The marketplace demo on this page runs entirely in your browser.
+                Orders are saved locally and no payment is processed.
+              </p>
+            </details>
+            <details>
+              <summary>When can I download the app?</summary>
+              <p>
+                Join the waitlist below. When your campus opens, we'll send iOS and
+                Android download links to your email.
+              </p>
+            </details>
+            <details>
+              <summary>How do I contact support?</summary>
+              <p>
+                Visit the <a href="support.html">support page</a> or email
+                <a href="mailto:support@campusmarket.app">support@campusmarket.app</a>.
+              </p>
+            </details>
+          </div>
         </div>
       </section>
 
-      <section class="section alt" id="waitlist">
+      <section class="cta-section" id="waitlist">
         <div class="wrap">
-          <div class="cta-banner">
+          <div class="cta-card">
             <div>
-              <h2>Get Vendr on your campus.</h2>
-              <p>Leave your email. We’ll send download links when your school opens.</p>
+              <h2>Get Vendr on your campus</h2>
+              <p>
+                Join the waitlist and we'll notify you when the app is available at
+                your university.
+              </p>
             </div>
-            <form id="waitlist-form" style="min-width:min(100%,360px)">
+            <form id="waitlist-form">
               <div class="form-row">
-                <label for="email">Email</label>
-                <input id="email" name="email" type="email" placeholder="you@university.edu" />
+                <label for="email">Email address</label>
+                <input id="email" name="email" type="email" placeholder="you@university.edu" required />
               </div>
               <div class="form-row">
-                <label for="campus">Campus</label>
+                <label for="campus">University</label>
                 <input id="campus" name="campus" placeholder="University of Ghana" />
               </div>
-              <button class="btn" type="submit">Join waitlist</button>
+              <button class="btn" type="submit" style="width: 100%">Join waitlist</button>
               <p class="form-status" id="waitlist-status"></p>
             </form>
           </div>
@@ -254,19 +340,37 @@
 
     <footer class="site-footer">
       <div class="wrap footer-grid">
-        <div>
-          <a class="brand" href="index.html"><img src="assets/logo.svg" alt="" />Vendr</a>
+        <div class="footer-brand">
+          <a class="brand" href="index.html">
+            <img src="assets/logo.svg" alt="" width="28" height="28" />
+            <span class="brand-mark">Vendr</span>
+          </a>
           <p>Campus marketplace for university students.</p>
         </div>
-        <div>
-          <a href="privacy.html">Privacy</a> ·
-          <a href="terms.html">Terms</a> ·
-          <a href="support.html">Support</a>
-          <p>© <span data-year></span> Vendr</p>
+        <div class="footer-col">
+          <h4>Product</h4>
+          <nav class="footer-links">
+            <a href="#features">Features</a>
+            <a href="#demo">Demo</a>
+            <a href="#how-it-works">How it works</a>
+          </nav>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <nav class="footer-links">
+            <a href="privacy.html">Privacy policy</a>
+            <a href="terms.html">Terms of use</a>
+            <a href="support.html">Support</a>
+          </nav>
         </div>
       </div>
+      <div class="wrap footer-bottom">
+        <span>© <span data-year></span> Vendr. All rights reserved.</span>
+        <span>Made for campus communities in Ghana</span>
+      </div>
     </footer>
-    <div class="toast" id="toast" role="status"></div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
     <script src="js/app.js"></script>
   </body>
 </html>
